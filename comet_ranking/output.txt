@@ -1,0 +1,232 @@
+Hello, I am Park Tae-joon.
+In this time we will mathematically understand the linear regression algorithm 
+As we saw earlier, the linear regression model is a line.
+And this line can be expressed as a linear equation.
+For example y can be expressed as ax plus b 
+Here, A becomes the slope and B becomes the y-intercept.
+Now, let's take the rotation in this way from now on.
+The y section is expressed as theta zero. The slope is expressed as theta one.
+These two parameters determine the linear equation.
+The straight line hx will be expressed by adding theta zero and theta one x.
+So theta zero is the slope of the y section theta one.
+Hx is a prediction value 
+But to emphasize that this linear parameter is theta one, it is theta one.
+Theta was written below h as a subscript.
+The parameter of this straight line is called theta.
+It will be a measure of whether it is bad or not.
+As shown on the screen, as shown in the figure, we are the closest straight line to a given dataset.
+The straight line is displayed in red 
+Let's take a look at how to create a linear regression model and use it for prediction.
+It seems like you are seeing it.
+There is an algorithm for linear regression in the middle of the screen.
+This linear regression algorithm receives the dataset created in the remembering step as an input.
+It is an algorithm that creates the linear regression model h theta x.
+How this algorithm works is as discussed in previous lectures.
+The slope and the y-intercept value are arbitrarily initialized.
+For example, let's take a look.
+Wasn't it all about the algorithm to repeat countless times the process of moving?
+So we continue to repeat this simple algorithm 
+h theta x made in this way is h theta x.
+The number of rooms or the size of the house.
+The characteristics were received by input 
+It tracks predicted values such as housing prices.
+What is the output?
+The predicted value is the predicted value of the housing price.
+The linear regression algorithm is through the linear regression algorithm 
+I make a model or linear equation h theta x.
+It is the stage of making predictions.
+In this picture, the process of creating a dataset at the top is shown.
+Making hx in a linear regression algorithm is a formulate step.
+You can confirm that you are alive.
+In this linear regression algorithm this linear regression algorithm 
+A model that minimizes the difference between the correct answer value or the label and the predicted value.
+The method is presented on the screen.
+A dataset is given on the left side of the screen.
+The input characteristic is the size of the house.
+There are several data sets 
+The second data is x2 y2
+x3 y4 x4 y4 is like this?
+The dataset is that this value is already presented in the table 
+Then, this dataset can be visualized on a two-dimensional plane like the right.
+How does the visualization work? The horizontal axis is the size of the house.
+The vertical axis is the price of housing.
+In addition, you can take points one by one while having all the data.
+The advantages are displayed on a orange x display.
+So what are we going to do?
+If it is specific data, for example, i-th data, then it is specific data.
+The answer corresponding to the label or yi corresponding to the label 
+Then the difference in prediction values decreases 
+Then how do you obtain the predicted value?
+x of model h theta x is also x.
+It is only necessary to substitute the i-th data xi.
+Then, how does the predicted value come out?
+Let's take an example.
+The fourth map and x4 on this screen 
+We will see y4.
+How does the correct answer be determined?
+y4 is shown on the screen.
+How about the predicted value?
+Then, the difference between y4 and hx4 is the difference.
+How did you change the value of theta zero and theta one 
+This data point corresponding to x4 is the corresponds to x4 
+Is it above or below the straight line?
+Then, depending on whether it is the right or left of the y-axis.
+It repeats the process of rotating and moving.
+In this case it is above the line 
+Then he is on the right side of the y-axis, so how is it?
+The angle increased 
+It rotates counterclockwise and increases it.
+I moved it to the top 
+Then, what happens in the process?
+The value of theta one corresponding to the slope also changes.
+The theta zero value corresponding to the y fragment is also changed.
+It is only mathematically expressed.
+I hope you will learn how the linear regression algorithm you learned in the lecture is expressed mathematically.
+We have expressed the linear regression algorithm we learned a little mathematically.
+Next we want to supplement the algorithm 
+We have the means we need.
+There is a need for a means of measuring how good the corresponding model or straight line is.
+This method is called a cost function and a cost function 
+So let's learn about this.
+It can be said that this method uses the cost function.
+Conversely, the cost function is how the model works.
+There are two models or straight lines on the left and right 
+The dataset is the same. The four data points are the same. On left and right.
+The straight lines are different from each other 
+But looking at it, the left is a bad model, and the right is a good model.
+Why is the left a bad model and the right a good model?
+The left is not the closest line to the given data point 
+The right is a better model or straight line compared to the left 
+In this case this cost function is this cost function 
+A large value is assigned to the bad model on the left.
+A small value is assigned to a good model on the right.
+So, one straight line came out.
+Let's see how a cost function suitable for a linear regression model can be defined.
+There are two methods: absolute error and square error.
+There are many lengths that can define a cost function or a cost function 
+These are the two things we will look at.
+The absolute error is the absolute error in English 
+It will be the sum of the vertical distance from one point of the dataset to the straight line.
+The square error will be the sum of the sum of these vertical distances multiplied.
+There are two factors. You can define the cost function or cost function with two factors.
+Then, first, we will define the cost function as absolute error absolute error.
+absolute error absolute error is each point of the dataset and each point of the dataset.
+It is the sum of vertical distances between straight lines.
+Although we looked at the mathematical model, what is needed to calculate this vertical distance?
+The difference between the label or correct answer value and the predicted value is used.
+That s right for example the fourth data 
+What do you do if you go up and down vertically?
+That's the predicted value when passing through the straight line.
+Then, if you go up a little more, you will see it.
+It's a vertical distance.
+So, what will this difference be?
+It can be a positive or negative value depending on whether the point is above or below the line.
+So, in order to always change this difference to a positive number, an absolute value is taken.
+It means that if you have a difference and add all data, it becomes a cost function.
+Then, a good linear regression model is a model with a line close to the point.
+Perhaps the latter.
+How can I make that? It should be made with a line that minimizes the sum of the errors.
+You will have to choose a line that minimizes the sum of the vertical distance from each point to the line.
+It s a line where the sum of the highest vertical distance is minimum 
+In that sense, it means that cost function can be defined.
+There are two models we saw earlier, the bad model on the left and the good model on the right.
+We will add errors.
+There is a vertical distance from each four points to the line, and if you add it up, there is a very long error.
+Isn't the right right? Isn't the vertical distance from each point to the straight line small? If you add this, there will be a very small error.
+The left is large and the right is small.
+It can be seen that the right is a relatively more suitable model than the left.
+So how do we use it?
+If you are given data and there is only one straight line, how do you do it?
+So, we have to see if we respond.
+Such a method and how it descends from the calculation phase.
+somewhere in the mountains.
+Where is the height?
+The position of somewhere in the mountain is changed to a straight line, and then the elevation at that location is changed to a cost value.
+If you see this, the cost function seems like a valley rather than a mountain.
+An algorithm that descends slowly from the mountain or an algorithm that descends the lowest point in the valley.
+It is said that it corresponds to a straight line or model.
+In other words, it corresponds to the height in that point.
+It s possible to find the best model 
+If you think about the algorithm that descends from the mountains, think about it.
+It means that the model changes from one model to a slightly better model through each step 
+It s a step farther than the current model 
+It will be more inclined to go down than currently 
+So through each step each step 
+It will be replaced with a slightly better model.
+If you continue to go through this, you will go to the best model.
+Finally, the best model
+It will be possible to find the minimum model.
+Oh so I m looking forward to the method used when going down from the mountain slowly 
+The method of operation will be described in detail.
+First, the slope and the initial value of the wire fragment are arbitrarily selected.
+It is random selection.
+Then, the value of the cost function is reduced in the direction of decreasing.
+The slope and the value of the wire fragment continue to change.
+Continued change will be the key.
+How to design the process will be the key. How do we do it?
+We are also trying to help understand.
+Since visualization is a little difficult to imagine, the problem is simplified.
+There are no other reasons.
+On the other hand we reviewed it 
+As shown here, it has a quadratic function form.
+And the formula used to change the value is:
+But what value is deleted 
+The second step is continuing to repeat this process 
+This part can be explained by referring to a complex mathematical and polymeric coefficient 
+Then, let us take an actual example.
+Let's take a look.
+Let's take a look at the first step.
+The initial value of the beta is randomly selected at about 5 times.
+Of course, every time the algorithm is executed, this initial value is changed.
+So, it may be minus 3 at some point, plus 1 at some point, and then it is different.
+However, it is said that the initial value changes every time the algorithm is executed. Is the final result also changed?
+It s not that but I said that the final result is always the same 
+You will know why it s the same when you execute the algorithm 
+Then what should I do after selecting the initial value 
+It is a process of repetition, how did you say that it was repeated?
+If it is the right of the target point, the slope value is
+The sign becomes positive.
+It will be updated in the direction of shrinking because it removes the value 
+For example, since the initial value is selected randomly, there may be a secondary value on the left of the target point.
+For example, the initial value was not wrong, but negative.
+If you execute the algorithm, it may be the initial value of the beta because it is negative.
+Then how is it? In conclusion, the third is updated in the direction of growing.
+Let's take a look at why.
+The negative number will come out.
+In addition to the negative value the negative value 
+It seems like adding a positive value, so how do you do it?
+In both cases both of these two 
+It is in the direction of reducing and lowering in the direction of reducing.
+You look at the middle of the consciousness 
+It will be a value to set how much beta will be updated.
+It won't change very much from right to right.
+But it was closer to the goal 
+You will reach the maximum value 
+The interval to find the minimum value is the interval at which the minimum value is found.
+If the learning rate is small, it will become small.
+So, you have to update the beta several times, but you have to update it.
+It can be seen that you can definitely reach the maximum value 
+If the learning rate is small, the computer takes more trouble. However, it is.
+I hope you understand that it can reach the maximum value clearly 
+Conversely, if the learning rate is high, how will it be?
+The distance to find the minimum value increases.
+What if it grows bigger and bigger?
+It's on the left of the target value.
+If you can find the peak value the number of updates may be smaller 
+If you go throughzigzag, it is not a thousand times, but a thousand times.
+It can be done only a few times.
+The number of updates may be reduced.
+This special case is good.
+If luck is good, the number of updates may be reduced. Find the minimum value.
+What is it that you can t find the peak value and expose it 
+What if this happens? I won't find the minimum price and I'll go to the wrong place.
+It is said that there may be such a case.
+So when the learning rate increases the learning rate increases 
+The experiment may not be performed and the minimum value may not be found and emitted 
+So, it is good to set an appropriate value for the learning rate.
+A smaller value is better than a large one.
+If the learning rate is small, it converges unconditionally.
+It is important how well the learning rate parameters are selected to fit the data.
+It has been changed in various ways, and now experiments are conducted to match the appropriate learning rate to the data.
+Finding the rate of learning will be what you have to do.
+I will conclude this week's lecture.
